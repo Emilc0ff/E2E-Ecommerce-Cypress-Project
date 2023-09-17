@@ -4,7 +4,7 @@ import { ShoppingCartPage } from '../support/Pages/shoppingCartPage';
 import { CheckoutPage } from '../support/Pages/checkoutPage'
 import { ReciptPage } from '../support/Pages/reciptPage'
 
-describe('Entrega Final', () => {
+describe('Entrega Final - Pushing IT', () => {
     const numeroRandom = Math.floor(Math.random() * 9999 );
     const username = `usuariotest${numeroRandom}`;
     let userData
