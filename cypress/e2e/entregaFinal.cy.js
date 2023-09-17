@@ -86,7 +86,7 @@ describe('Entrega Final', () => {
         reciptPage.obtieneTotalSpent().should('have.text',`You have spent $${precioFinalString}`);
     });
 
-    after('AfterAll', () => {
+    after('After', () => {
         cy.request({
             url : `https://pushing-it.onrender.com/api/deleteuser/${username}`,
             method : 'DELETE'
