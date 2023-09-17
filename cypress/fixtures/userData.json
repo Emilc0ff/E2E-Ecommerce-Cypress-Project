@@ -1,0 +1,15 @@
+{
+        "register" : {
+                "password": "123456!",
+                "gender" : "male",
+                "day" : "12",
+                "month" : "April",
+                "year" : "1988"
+        },
+
+        "buyer" : {
+                "name" : "Comprador",
+                "lastName" : "Compulsivo",
+                "cardNumber" :4444333322221111
+        }
+}
