@@ -22,6 +22,6 @@ export class CheckoutPage {
 
     clickeaPurchaseButton() {
         cy.contains(this.clickPurchaseButton).click()
-        cy.wait(12000)
+        //cy.wait(12000)
     }        
  }

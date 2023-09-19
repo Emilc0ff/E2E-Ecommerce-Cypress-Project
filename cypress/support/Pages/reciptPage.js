@@ -6,7 +6,7 @@ export class ReciptPage {
 
 
     obtieneName() {
-        return cy.get(this.modalName)
+        return cy.get(this.modalName, {timeout : 12000})
     }
 
     obtieneItem1() {
