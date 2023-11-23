@@ -48,19 +48,19 @@ describe('Entrega Final - Pushing IT', () => {
                 expect(respuestaRegister.status).to.be.equal(200);
         });
 
-        cy.request({
-            url : "https://pushing-it.onrender.com/api/login",
-            method: "POST",
-            body : {
-                username : username,
-                password : userData.register.password
-            }
-        }).then(respuestaLogin => {
-            cy.log(respuestaLogin.body);
-            window.localStorage.setItem('token', respuestaLogin.body.token);
-            window.localStorage.setItem('user', respuestaLogin.body.user);
-            cy.visit('');
-        })
+         cy.request({
+             url : "https://pushing-it.onrender.com/api/login",
+             method: "POST",
+             body : {
+                 username : username,
+                 password : userData.register.password
+             }
+         }).then(respuestaLogin => {
+             cy.log(respuestaLogin.body);
+             window.localStorage.setItem('token', respuestaLogin.body.token);
+             window.localStorage.setItem('user', respuestaLogin.body.user);
+             cy.visit('');
+         })
     });
 
     it('Agrega dos items al carrito, valida productos y precio final', () => {

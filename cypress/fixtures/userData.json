@@ -11,5 +11,7 @@
                 "name" : "Comprador",
                 "lastName" : "Compulsivo",
                 "cardNumber" :4444333322221111
-        }
+        },
+
+        "date" : "04/12/1988"
 }
